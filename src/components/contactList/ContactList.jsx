@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
-import { ContactListItem } from '../contactListItem/ContactListItem';
+import { nanoid } from 'nanoid';
+// import { ContactListItem } from '../contactListItem/ContactListItem';
 
 export const ContactList = ({ contacts }) => {
     return <ul>
         {contacts.map(contact => {
-            return <li key={contact.id}>
-                <ContactListItem contact={contact} />
+            return <li key={nanoid()}>
+                {contact.id}
+                {/* <ContactListItem contact={contact} /> */}
             </li>
         })}
     </ul>
