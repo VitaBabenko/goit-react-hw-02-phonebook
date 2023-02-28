@@ -25,9 +25,10 @@ export class App extends Component {
     console.log(e.currentTarget.value)
     
     this.setState({
-       filter: e.currentTarget.value
-    })
-  }
+      filter: e.currentTarget.value
+    });
+  };
+
 
   deleteContact = (contactId) => {
     this.setState(prevState => {
