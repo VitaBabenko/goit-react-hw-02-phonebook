@@ -19,6 +19,7 @@ export const Btn = styled.button`
     display: block;
     width: 120px;
     height: 35px;
+    cursor: pointer;
     background-color: white;
     border-radius: 3px;
 

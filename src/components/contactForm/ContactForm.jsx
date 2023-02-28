@@ -21,8 +21,7 @@ export const ContactForm = ({ onSubmit }) => {
         }}
         validationSchema={ContactSchema}
         onSubmit={(values, actions) => {
-            console.log(values);
-            onSubmit = ({
+            onSubmit({
                 ...values,
                 id: nanoid()
             });
